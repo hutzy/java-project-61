@@ -1,0 +1,30 @@
+# IDE
+.idea/
+*.iml
+*.ipr
+*.iws
+.vscode/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Build output
+/target/
+/build/
+/out/
+
+# Gradle
+.gradle/
+**/build/
+
+# Logs
+*.log
+
+# Кэш
+*.cache
+*.tmp
+
+
+
+
