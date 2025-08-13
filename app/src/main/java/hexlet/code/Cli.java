@@ -4,10 +4,14 @@ import java.util.Scanner;
 
 public class Cli {
 
-    static String consoleCapture() {
+    public static String consoleCaptureString() {
         var sc = new Scanner(System.in);
-        System.out.println("May I have your name?");
         return sc.nextLine();
+    }
+
+    public static int consoleCaptureInt() {
+        var sc = new Scanner(System.in);
+        return sc.nextInt();
     }
 
 
