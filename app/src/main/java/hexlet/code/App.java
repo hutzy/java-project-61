@@ -1,11 +1,6 @@
 package hexlet.code;
 
-import hexlet.code.games.CalcGame;
-import hexlet.code.games.EvenGame;
-import hexlet.code.games.GcdGame;
-import hexlet.code.games.ProgressionGame;
-import hexlet.code.games.PrimeGame;
-import hexlet.code.games.GreatGame;
+import hexlet.code.games.*;
 
 import java.io.PrintStream;
 import java.util.function.Supplier;
@@ -17,10 +12,7 @@ public class App {
 
     public static void main(String[] args) {
         System.setOut(new PrintStream(System.out, true, UTF_8));
-        runGameMenu();
-    }
 
-    static void runGameMenu() {
         System.out.println("Please enter the game number and press Enter.");
         System.out.println("1 - Greet");
         System.out.println("2 - Even");
@@ -30,11 +22,15 @@ public class App {
         System.out.println("6 - Prime");
         System.out.println("0 - Exit");
 
-        Supplier<Integer> inputSupplier = Cli::consoleCaptureInt;
 
-        Stream.generate(inputSupplier)
-                .takeWhile(input -> input != 0)
-                .forEach(App::handleMenuChoice);
+        runGameMenu();
+    }
+
+    static void runGameMenu() {
+        Supplier<Integer> inputSupplier = Cli::consoleCaptureInt;
+        int choice = inputSupplier.get();
+
+        handleMenuChoice(choice);
 
         System.out.println("Goodbye!");
     }
