@@ -31,9 +31,6 @@ jobs:
           key: ${{ runner.os }}-gradle-${{ hashFiles('**/*.gradle') }}
           restore-keys: ${{ runner.os }}-gradle
 
-      - name: Convert line endings for Gradle wrapper
-        run: git config --global core.autocrlf input && git checkout app/gradlew
-
       - name: Make Gradle wrapper executable
         run: chmod +x app/gradlew
 
