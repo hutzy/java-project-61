@@ -25,7 +25,9 @@ public class ProgressionGame {
                         } else {
                             question.append(progression[i]);
                         }
-                        if (i < length - 1) question.append(" ");
+                        if (i < length - 1) {
+                            question.append(" ");
+                        }
                     }
 
                     return new Engine.GameRound(question.toString(), String.valueOf(hiddenNumber));
