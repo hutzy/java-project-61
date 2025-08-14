@@ -1,43 +1,34 @@
 .DEFAULT_GOAL := build-run
 
 setup:
-	chmod +x gradlew
+	chmod +x /project/code/app/gradlew
 	./gradlew wrapper --gradle-version 8.5
 
 clean:
-	chmod +x gradlew
 	./gradlew clean
 
 build:
-	chmod +x gradlew
 	./gradlew clean build
 
 install:
-	chmod +x gradlew
 	./gradlew clean install
 
 run-dist:
-	chmod +x gradlew
 	./build/install/app/bin/app
 
 run:
-	chmod +x gradlew
 	./gradlew run
 
 test:
-	chmod +x gradlew
 	./gradlew test
 
 report:
-	chmod +x gradlew
 	./gradlew jacocoTestReport
 
 lint:
-	chmod +x gradlew
 	./gradlew checkstyleMain
 
 check-deps:
-	chmod +x gradlew
 	./gradlew dependencyUpdates -Drevision=release
 
 
