@@ -1,7 +1,6 @@
 .DEFAULT_GOAL := build-run
 
 setup:
-	chmod +x /project/code/app/gradlew
 	./gradlew wrapper --gradle-version 8.5
 
 clean:
