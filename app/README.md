@@ -10,22 +10,22 @@
 
 [![Code Smells](https://sonarcloud.io/api/project_badges/measure?project=hutzy_java-project-61&metric=code_smells)](https://sonarcloud.io/summary/new_code?id=hutzy_java-project-61)
 
-![img_2.png](assets/img_2.png)
+![img_2.png](app/assets/img_2.png)
 
-![img.png](assets/img.png)
+![img.png](app/assets/img.png)
 
-![img.png](assets/img_3.png)
+![img.png](app/assets/img_3.png)
 
-![img.png](assets/img_4.png)
+![img.png](app/assets/img_4.png)
 
-![img.png](assets/img_5.png)
+![img.png](app/assets/img_5.png)
 
-![img.png](assets/img_6.png)
+![img.png](app/assets/img_6.png)
 
-![img.png](assets/img_7.png)
+![img.png](app/assets/img_7.png)
 
-![img.png](assets/img_8.png)
+![img.png](app/assets/img_8.png)
 
-![img.png](assets/img_9.png)
+![img.png](app/assets/img_9.png)
 
-![img.png](assets/img_10.png)
+![img.png](app/assets/img_10.png)
