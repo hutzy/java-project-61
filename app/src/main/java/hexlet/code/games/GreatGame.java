@@ -1,6 +1,6 @@
-package io.hexlet.code.games;
+package hexlet.code.games;
 
-import io.hexlet.code.Cli;
+import hexlet.code.Cli;
 
 public class GreatGame {
 

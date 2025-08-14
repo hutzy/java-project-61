@@ -1,8 +1,8 @@
-package io.hexlet.code.games;
+package hexlet.code.games;
 
-import io.hexlet.code.Engine;
+import hexlet.code.Engine;
 
-import static io.hexlet.code.Engine.RANDOM;
+import static hexlet.code.Engine.RANDOM;
 
 public class ProgressionGame {
 
