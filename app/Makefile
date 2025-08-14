@@ -1,7 +1,7 @@
 .DEFAULT_GOAL := build-run
 
 setup:
-	./gradlew wrapper --gradle-version 8.14
+	./gradlew wrapper --gradle-version 8.5
 
 clean:
 	./gradlew clean
@@ -13,7 +13,7 @@ install:
 	./gradlew clean install
 
 run-dist:
-	./build/install/app/bin/app.exe
+	./build/install/app/bin/app
 
 run:
 	./gradlew run
@@ -27,9 +27,8 @@ report:
 lint:
 	./gradlew checkstyleMain
 
-update-deps:
-	./gradlew refreshVersions
-	# ./gradlew dependencyUpdates -Drevision=release
+check-deps:
+	./gradlew dependencyUpdates -Drevision=release
 
 
 build-run: build run
