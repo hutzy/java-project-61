@@ -12,20 +12,20 @@
 
 ![img_2.png](app/assets/img_2.png)
 
-![img.png](app/assets/img.png)
+![img.png](assets/img.png)
 
-![img.png](app/assets/img_3.png)
+![img.png](assets/img_3.png)
 
-![img.png](app/assets/img_4.png)
+![img.png](assets/img_4.png)
 
-![img.png](app/assets/img_5.png)
+![img.png](assets/img_5.png)
 
-![img.png](app/assets/img_6.png)
+![img.png](assets/img_6.png)
 
-![img.png](app/assets/img_7.png)
+![img.png](assets/img_7.png)
 
-![img.png](app/assets/img_8.png)
+![img.png](assets/img_8.png)
 
-![img.png](app/assets/img_9.png)
+![img.png](assets/img_9.png)
 
-![img.png](app/assets/img_10.png)
+![img.png](assets/img_10.png)
