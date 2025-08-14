@@ -1,11 +1,11 @@
-package hexlet.code;
+package io.hexlet.code;
 
-import hexlet.code.games.CalcGame;
-import hexlet.code.games.EvenGame;
-import hexlet.code.games.GcdGame;
-import hexlet.code.games.ProgressionGame;
-import hexlet.code.games.PrimeGame;
-import hexlet.code.games.GreatGame;
+import io.hexlet.code.games.CalcGame;
+import io.hexlet.code.games.EvenGame;
+import io.hexlet.code.games.GcdGame;
+import io.hexlet.code.games.ProgressionGame;
+import io.hexlet.code.games.PrimeGame;
+import io.hexlet.code.games.GreatGame;
 
 import java.io.PrintStream;
 import java.util.function.Supplier;

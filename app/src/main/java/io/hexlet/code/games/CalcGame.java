@@ -1,8 +1,8 @@
-package hexlet.code.games;
+package io.hexlet.code.games;
 
-import hexlet.code.Engine;
+import io.hexlet.code.Engine;
 
-import static hexlet.code.Engine.RANDOM;
+import static io.hexlet.code.Engine.RANDOM;
 
 public class CalcGame {
 
