@@ -33,4 +33,9 @@ check-deps:
 
 build-run: build run
 
-.PHONY: build
+.PHONY: chmod setup clean build install run test report lint check-deps build-run
+
+build-run: chmod build run
+
+chmod:
+	chmod +x gradlew
