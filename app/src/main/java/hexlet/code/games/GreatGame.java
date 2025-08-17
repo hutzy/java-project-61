@@ -4,7 +4,12 @@ import hexlet.code.Cli;
 
 public class GreatGame {
 
-    public static String userName;
+    private static String userName;
+
+    public static String getUserName() {
+        return userName;
+    }
+
 
     public static void greetUser() {
         System.out.println("Welcome to the Brain Games!");

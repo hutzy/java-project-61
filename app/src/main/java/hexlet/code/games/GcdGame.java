@@ -7,13 +7,15 @@ import java.util.Random;
 public class GcdGame {
 
     private static final Random RANDOM = new Random();
+    private static final int BOUND = 101;
+    private static final int ORIGIN = 1;
 
     public static void start(String userName) {
         Engine.runGame(
                 "Find the greatest common divisor of given numbers.",
                 () -> {
-                    int a = RANDOM.nextInt(1, 101);
-                    int b = RANDOM.nextInt(1, 101);
+                    int a = RANDOM.nextInt(ORIGIN, BOUND);
+                    int b = RANDOM.nextInt(ORIGIN, BOUND);
                     int correctAnswer = gcd(a, b);
                     return new Engine.GameRound(a + " " + b, String.valueOf(correctAnswer));
                 },
