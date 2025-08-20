@@ -1,10 +1,6 @@
 package hexlet.code;
 
-import hexlet.code.games.CalcGame;
-import hexlet.code.games.GcdGame;
-import hexlet.code.games.EvenGame;
-import hexlet.code.games.ProgressionGame;
-import hexlet.code.games.PrimeGame;
+import hexlet.code.games.*;
 
 import java.util.Scanner;
 import java.util.function.Supplier;
@@ -57,7 +53,7 @@ public class Engine {
             case GCD -> startGameWithGreet(() -> GcdGame.start(Great.getUserName()));
             case PROGRESSION -> startGameWithGreet(() -> ProgressionGame.start(Great.getUserName()));
             case PRIME -> startGameWithGreet(() -> PrimeGame.start(Great.getUserName()));
-            case EXIT -> { }
+            default -> System.out.println("Invalid input. Please try again.");
         }
         System.out.println();
     }
