@@ -1,8 +1,6 @@
-package hexlet.code.games;
+package hexlet.code;
 
-import hexlet.code.Cli;
-
-public class GreatGame {
+public class Great {
 
     private static String userName;
 

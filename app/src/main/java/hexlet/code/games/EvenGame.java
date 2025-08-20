@@ -1,10 +1,9 @@
 package hexlet.code.games;
 
 import hexlet.code.Engine;
+import hexlet.code.RandomUtils;
 
 import java.util.function.Predicate;
-
-import static hexlet.code.Engine.RANDOM;
 
 public class EvenGame {
 
@@ -15,7 +14,7 @@ public class EvenGame {
         Engine.runGame(
                 "Answer 'yes' if the number is even, otherwise answer 'no'.",
                 () -> {
-                    int number = RANDOM.nextInt(BOUND);
+                    int number = RandomUtils.nextInt(BOUND);
                     String correctAnswer = IS_EVEN.test(number) ? "yes" : "no";
                     return new Engine.GameRound(String.valueOf(number), correctAnswer);
                 },

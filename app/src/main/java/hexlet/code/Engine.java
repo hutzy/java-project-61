@@ -1,13 +1,17 @@
 package hexlet.code;
 
-import java.util.Random;
+import hexlet.code.games.CalcGame;
+import hexlet.code.games.GcdGame;
+import hexlet.code.games.EvenGame;
+import hexlet.code.games.ProgressionGame;
+import hexlet.code.games.PrimeGame;
+
 import java.util.Scanner;
 import java.util.function.Supplier;
 
 public class Engine {
 
     private static final int ROUNDS = 3;
-    public static final Random RANDOM = new Random();
 
     public record GameRound(String question, String correctAnswer) {
     }
@@ -36,6 +40,33 @@ public class Engine {
         }
 
         System.out.printf("Congratulations, %s!%n", userName);
+    }
+
+    public static void handleMenuChoice(Game choice) {
+
+        if (choice == null) {
+            System.out.println("Invalid input. Please try again.");
+            System.out.println();
+            return;
+        }
+
+        switch (choice) {
+            case GREET -> Great.greetUser();
+            case EVEN -> startGameWithGreet(() -> EvenGame.start(Great.getUserName()));
+            case CALC -> startGameWithGreet(() -> CalcGame.start(Great.getUserName()));
+            case GCD -> startGameWithGreet(() -> GcdGame.start(Great.getUserName()));
+            case PROGRESSION -> startGameWithGreet(() -> ProgressionGame.start(Great.getUserName()));
+            case PRIME -> startGameWithGreet(() -> PrimeGame.start(Great.getUserName()));
+            case EXIT -> { }
+        }
+        System.out.println();
+    }
+
+    public static void startGameWithGreet(Runnable game) {
+        if (Great.getUserName() == null) {
+            Great.greetUser();
+        }
+        game.run();
     }
 
 }

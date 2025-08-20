@@ -8,11 +8,4 @@ public class Cli {
         var sc = new Scanner(System.in);
         return sc.nextLine();
     }
-
-    public static int consoleCaptureInt() {
-        var sc = new Scanner(System.in);
-        return sc.nextInt();
-    }
-
-
 }

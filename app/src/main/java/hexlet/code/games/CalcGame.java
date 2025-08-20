@@ -1,8 +1,7 @@
 package hexlet.code.games;
 
 import hexlet.code.Engine;
-
-import static hexlet.code.Engine.RANDOM;
+import hexlet.code.RandomUtils;
 
 public class CalcGame {
 
@@ -14,9 +13,9 @@ public class CalcGame {
         Engine.runGame(
                 "What is the result of the expression?",
                 () -> {
-                    int a = RANDOM.nextInt(ORIGIN, BOUND);
-                    int b = RANDOM.nextInt(ORIGIN, BOUND);
-                    String op = OPERATORS[RANDOM.nextInt(OPERATORS.length)];
+                    int a = RandomUtils.nextInt(ORIGIN, BOUND);
+                    int b = RandomUtils.nextInt(ORIGIN, BOUND);
+                    String op = OPERATORS[RandomUtils.nextInt(OPERATORS.length)];
                     int correct = calculate(a, b, op);
                     return new Engine.GameRound(a + " " + op + " " + b, String.valueOf(correct));
                 },

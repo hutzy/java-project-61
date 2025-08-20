@@ -1,10 +1,10 @@
 package hexlet.code.games;
 
 import hexlet.code.Engine;
+import hexlet.code.RandomUtils;
 
 import java.util.function.Predicate;
 
-import static hexlet.code.Engine.RANDOM;
 
 public class PrimeGame {
 
@@ -16,7 +16,7 @@ public class PrimeGame {
         Engine.runGame(
                 "Answer 'yes' if given number is prime. Otherwise answer 'no'.",
                 () -> {
-                    int number = RANDOM.nextInt(MIN_RANDOM_NUMBER, MAX_RANDOM_NUMBER);
+                    int number = RandomUtils.nextInt(MIN_RANDOM_NUMBER, MAX_RANDOM_NUMBER);
                     String correctAnswer = IS_PRIME.test(number) ? "yes" : "no";
                     return new Engine.GameRound(String.valueOf(number), correctAnswer);
                 },
