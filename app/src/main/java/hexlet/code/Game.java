@@ -13,9 +13,9 @@ public enum Game {
     private final int code;
     private final String title;
 
-    Game(int code, String title) {
-        this.code = code;
-        this.title = title;
+    Game(int codeValue, String titleValue) {
+        this.code = codeValue;
+        this.title = titleValue;
     }
 
     public int getCode() {
